@@ -1,4 +1,7 @@
-package duck;
+//6510451018 Harit Sombatsiri
+package duck.services;
+
+import duck.services.Quackable;
 
 public class QuackCounter implements Quackable {
     Quackable quackable;

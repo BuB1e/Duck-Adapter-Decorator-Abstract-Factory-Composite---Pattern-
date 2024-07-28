@@ -1,4 +1,7 @@
-package duck;
+//6510451018 Harit Sombatsiri
+package duck.models;
+
+import duck.services.Quackable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,11 @@ public class Flock implements Quackable {
     @Override
     public void quack() {
         System.out.println("");
-        for (Quackable q : quackers)
+        quackers.getFirst().quack();
+        quackers.getFirst().quack();
+        for (Quackable q : quackers) {
             q.quack();
+            System.out.println("!");
+        }
     }
 }
