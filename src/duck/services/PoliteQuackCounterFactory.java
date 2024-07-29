@@ -8,21 +8,21 @@ import duck.models.RubberDuck;
 public class PoliteQuackCounterFactory extends AbstractQuackFactory{
     @Override
     public Quackable createDuckCall() {
-        return new PoliteQuackCounter(new PoliteQuack(new DuckCall()));
+        return new PoliteQuackCounter(new PoliteQuack(new QuackCounter(new DuckCall())));
     }
 
     @Override
     public Quackable createMallardDuck() {
-        return new PoliteQuackCounter(new PoliteQuack(new MallardDuck()));
+        return new PoliteQuackCounter(new PoliteQuack(new QuackCounter(new MallardDuck())));
     }
 
     @Override
     public Quackable createRedheadDuck() {
-        return new PoliteQuackCounter(new PoliteQuack(new RedheadDuck()));
+        return new PoliteQuackCounter(new PoliteQuack(new QuackCounter(new RedheadDuck())));
     }
 
     @Override
     public Quackable createRubberDuck() {
-        return new PoliteQuackCounter(new PoliteQuack(new RubberDuck()));
+        return new PoliteQuackCounter(new PoliteQuack(new QuackCounter(new RubberDuck())));
     }
 }
